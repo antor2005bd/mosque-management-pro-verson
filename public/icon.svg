@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle (Maskable padding safe area) -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  
+  <!-- Mosque Dome and Crescent Vector Graphic -->
+  <g transform="translate(106, 106) scale(0.6)">
+    <!-- Base -->
+    <path d="M50 350 L450 350 L450 400 L50 400 Z" fill="url(#gold)" />
+    <!-- Pillars -->
+    <rect x="80" y="240" width="30" height="110" rx="5" fill="#fef08a" opacity="0.9" />
+    <rect x="390" y="240" width="30" height="110" rx="5" fill="#fef08a" opacity="0.9" />
+    <!-- Dome -->
+    <path d="M140 350 C140 180, 360 180, 360 350 Z" fill="url(#gold)" />
+    <!-- Center spire and crescent -->
+    <line x1="250" y1="180" x2="250" y2="110" stroke="url(#gold)" stroke-width="12" stroke-linecap="round" />
+    <circle cx="250" cy="115" r="16" fill="url(#gold)" />
+    <path d="M250 85 C280 85, 295 105, 290 125 C265 125, 245 105, 250 85 Z" fill="url(#gold)" />
+  </g>
+</svg>

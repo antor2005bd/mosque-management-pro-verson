@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide menus, headers, sidebars, and control widgets */
+  aside,
+  header,
+  nav,
+  button,
+  input,
+  textarea,
+  select,
+  .print\:hidden,
+  .lg\:col-span-1,
+  footer,
+  [role="button"] {
+    display: none !important;
+  }
+
+  /* Reset layout constraints to allow multi-page printing */
+  html,
+  body,
+  #root,
+  .h-screen,
+  .overflow-hidden,
+  .flex-1,
+  .overflow-y-auto {
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Force print full width and remove scroll restrictions */
+  .lg\:col-span-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .max-w-7xl {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Ensure page breaks are handled gracefully */
+  tr {
+    page-break-inside: avoid !important;
+  }
+
+  table {
+    width: 100% !important;
+    page-break-inside: auto !important;
+  }
+}
