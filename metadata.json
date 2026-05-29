@@ -1,0 +1,6 @@
+{
+  "name": "Mosque Management System",
+  "description": "A comprehensive mosque management software with member tracking, chanda collection, and expense management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
